@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+    scroll-behavior: smooth;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hover:hover img{
+  transform: scale(1.2);
+}
+/* #blur1:hover ~ #blur2 ,#blur1:hover ~ #blur3{
+  filter: blur(4px); 
+} */
+#blur2:hover ~ #blur1 ,#blur2:hover ~ #blur3{
+  filter: blur(4px); 
+}
+#blur3:hover ~ #blur2 ,#blur3:hover ~ #blur1{
+  filter: blur(4px); 
+}
