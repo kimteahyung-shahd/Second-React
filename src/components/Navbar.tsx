@@ -14,10 +14,10 @@ function Navbar (){
         }`;
     return(
         <nav>
-            <div className="bg-white/40 cursor-pointer rounded-[5px] p-2 w-[50px] text-center fixed top-10 left-10 z-111">
+            <div className="bg-white/40 cursor-pointer rounded-[5px] p-2 w-[50px] text-center fixed top-4 left-4 sm:top-10 sm:left-10 z-111">
                 <LuAlignLeft onClick={()=>setOpenMenu(!openMenu)} className="text-3xl font-extrabold" />
             </div>
-            {openMenu && (<div  data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" className="z-[999] flex items-center gap-5 bg-slate-200/60 px-6 py-3 backdrop-blur-md rounded-full duration-100 fixed bottom-10 inset-x-0 mx-auto justify-center w-fit">
+            {openMenu && (<div  data-aos="fade-up" data-aos-duration="500" data-aos-offset="100" className="z-[999] flex items-center gap-3 sm:gap-5 bg-slate-200/60 px-4 sm:px-6 py-3 backdrop-blur-md rounded-full duration-100 fixed bottom-6 sm:bottom-10 inset-x-4 sm:inset-x-0 mx-auto justify-center w-fit max-w-[calc(100%-2rem)]">
                 <a href="#home" className={linkClasses("home")} onClick={()=>setActive("home")}>
                     <RiHomeSmile2Line className="text-xl" />
                 </a>
